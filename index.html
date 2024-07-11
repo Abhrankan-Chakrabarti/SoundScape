@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundScape</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>SoundScape</h1>
+    <p>Create your own ambient soundscape</p>
+    <div class="control-panel">
+        <div class="sound-control">
+            <p>Rain</p>
+            <input type="range" min="0" max="1" step="0.01" value="0.5" class="slider" id="rainSlider">
+        </div>
+        <div class="sound-control">
+            <p>Thunder</p>
+            <input type="range" min="0" max="1" step="0.01" value="0.5" class="slider" id="thunderSlider">
+        </div>
+        <div class="sound-control">
+            <p>Birds</p>
+            <input type="range" min="0" max="1" step="0.01" value="0.5" class="slider" id="birdsSlider">
+        </div>
+        <div class="sound-control">
+            <p>Waves</p>
+            <input type="range" min="0" max="1" step="0.01" value="0.5" class="slider" id="wavesSlider">
+        </div>
+    </div>
+    <button class="control-button" id="play">Play</button>
+    <button class="control-button" id="stop">Stop</button>
+
+    <audio id="rain" loop>
+        <source src="sounds/rain.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="thunder" loop>
+        <source src="sounds/thunder.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="birds" loop>
+        <source src="sounds/birds.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="waves" loop>
+        <source src="sounds/waves.mp3" type="audio/mpeg">
+    </audio>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
